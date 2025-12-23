@@ -26,7 +26,10 @@ export const auth = betterAuth({
       clientSecret: env.GOOGLE_CLIENT_SECRET,
     },
   },
-  trustedOrigins:["http://localhost:3000"]
+  trustedOrigins:["http://localhost:3000"],
+  cors: {
+    origin: ["http://localhost:3000", "https://endpointcollab-xd.vercel.app"],
+  },
 });
 
 /* 
