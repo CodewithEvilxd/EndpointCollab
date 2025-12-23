@@ -191,6 +191,7 @@ npm start
 | `GOOGLE_CLIENT_ID` | Google OAuth client ID | ✅ |
 | `GOOGLE_CLIENT_SECRET` | Google OAuth client secret | ✅ |
 | `GOOGLE_GENERATIVE_AI_API_KEY` | Google Gemini API key | ✅ |
+| `BETTER_AUTH_SECRET` | Secret key for Better Auth JWT signing | ✅ |
 
 ### OAuth Setup
 
@@ -424,6 +425,7 @@ GITHUB_CLIENT_SECRET=xxxx
 GOOGLE_CLIENT_ID=xxxx
 GOOGLE_CLIENT_SECRET=xxxx
 GOOGLE_GENERATIVE_AI_API_KEY=xxxx
+BETTER_AUTH_SECRET=your_random_secret_key_here
 ```
 
 - `DATABASE_URL` — Postgres connection string used by Prisma/generator and server runtime (`prisma/schema.prisma`, `prisma` commands).
